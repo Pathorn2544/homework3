@@ -1,0 +1,451 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    /*background-color: #36cdff;*/
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8px;
+    box-shadow: 5px;
+}
+
+nav.left{
+    /*border: 1px solid;*/
+    width: 320px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav.left input{
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    padding-inline: 8px;
+    font-size: 12px;
+    flex-grow: 1;
+    background-color: rgb(236, 236, 236);
+}
+
+nav.center{
+    /*border: 1px solid red;*/
+    flex-grow: 1;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+nav.center .box-icon{
+    /*background-color: white;*/
+    width: 129px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
+nav.center .box-icon:hover{
+    background-color: #eee;
+}
+
+nav.right{
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+nav.right .round-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
+.wrapper{
+    background-color: #eee;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    
+
+
+}
+
+
+.sider-left{
+    /*border: 1px dashed red;*/
+    flex-basis: 360px;
+    display: inline;
+    flex-direction: column;
+  
+}
+
+.bar{
+    height: 100%;
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .sider-left {
+        display: none; 
+    }
+}
+
+.news-feed{
+    /*border: 1px dashed red;*/
+    min-height: 100vh;
+    flex-basis: 680px;
+    display: inline;
+    flex-direction: column;
+    
+    
+    
+}
+
+.sticky{
+    position: sticky;
+    top: 5px;
+}
+
+.sidder-right{
+    /*border: 1px dashed red;*/
+    min-height: 100vh;
+    flex-basis: 360px;
+  
+    
+    
+}
+
+@media (max-width: 768px){
+
+    .sidder-right{
+        display: none;
+        
+    }
+    
+}
+.me{
+    /*margin-left: 2vw;*/
+    display: flex;
+    height: 60px;
+    gap: 12px;
+    align-items: center;
+    
+    
+    
+}
+
+.me p{
+    /*border: 1px solid red;*/
+    gap: 5vw;
+    /*margin-top: 18px;
+    padding-top: 0.1px;*/
+    
+    
+}
+
+.me svg{
+    padding-top: 0.02px;
+    width: 45px;
+    height: 45px;
+    padding-left: 20px;
+}
+
+.me:hover{
+    background-color: rgb(171, 171, 171);
+}
+
+.sider-left hr{
+    margin-top: 20px;
+}
+
+.sider-left hr{
+
+    position: relative;
+    left: 10px;
+    width: 20vw;;
+
+}
+
+.vvv p{
+    color: grey;
+    margin-left: 20px;
+    font-size: 20px;
+    
+    
+}
+
+.story {
+    /*border: 1px solid red;*/
+    width: 45vw;
+    height: 70px;
+    margin-left: 12px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top:12px ;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    
+}
+
+
+
+.word{
+    /*order: 1px solid red;*/
+    margin-top: 3px;
+    
+    
+}
+
+.story svg{
+    width: 45px;
+    height: 45px;
+    margin: 12px;
+}
+
+.word p{
+    color: grey;
+}
+
+.opinion{
+    width: 45vw;
+    height: 120px;
+    background-color: white;
+    /*border: 1px solid red;*/
+    margin-left: 12px;
+    border-radius: 10px;
+}
+
+.on{
+    height: 60px;
+    display: flex;
+    gap: 5px;
+}
+
+.on svg{
+    margin-left:5px ;
+    margin-top: 5px;
+}
+
+.on input{
+    width: 40vw;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 8px;
+    border: 1px solid transparent;
+    padding-left: 12px;
+    background-color: rgb(236, 236, 236);
+}
+
+.opinion hr{
+    margin-top: 4px;
+    width: 44vw;
+    margin-left: 0.5vw;
+    color: rgb(186, 186, 186);
+}
+
+.under{
+    
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40px;
+    align-items: center;
+    
+}
+
+.pic{
+    /*border: 1px solid red;*/
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 3px;
+    border-radius: 10px;
+    color: grey;
+}
+
+.pic svg{
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+}
+
+.pic:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+.show{
+    /*border: 1px solid red;*/
+    width: 45vw;
+    height: 700px;
+    margin-left: 12px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.top{
+    height: 60px;
+    display: flex;
+    gap: 5px;
+    /*border: 1px solid red;*/
+   
+}
+
+.top svg{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    
+}
+
+.name{
+   /*border: 1px solid red;*/
+    padding-top: 10px;
+    
+}
+
+.name p{
+    color: grey
+}
+
+.close{
+    /*border: 1px solid red;*/
+    width: 120px;
+    height: 29px;
+    margin-left: 65%;
+    display: flex;
+       
+}
+
+@media (max-width: 1000px) {
+    .close {
+        margin-left: 35%; 
+    }
+}
+
+
+
+.close svg{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.detail p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.like{
+   /*border: 1px solid red;*/
+    margin-top: 0.2px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 350px;
+    
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+    color: grey;
+    margin-left: 10px;
+    gap: 2px;
+    
+}
+
+
+@media (max-width:1000px) {
+
+    .comment{
+
+        font-size: 8px;
+
+    }
+    
+}
+
+.show hr{
+
+    margin-top: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gray;
+
+}
+
+.comment svg{
+    width: 20px;
+    height: 20px;
+}
+
+.picture svg{
+    width: 40vw;
+    height: 26vw;
+}
+
+.AAA{
+    /*border: 1px solid red;*/
+    margin-top:25px;
+    margin-left: 25px;
+    color: grey;
+}
+
+.bbb{
+   /*border: 1px solid red;*/
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 25px;
+}
+
+.bbb svg{
+    width: 40px;
+    height: 40px;
+}
+
+.ccc{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 44px;
+    align-items: center;
+    gap: 12px;
+    color: grey;
+}
+
+.ccc svg{
+    width: 20px;
+    height: 20px;
+}
+
+.sidder-right hr{
+
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: grey;
+}
